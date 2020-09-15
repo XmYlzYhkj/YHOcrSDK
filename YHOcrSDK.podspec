@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = ["Frameworks/YHOcrSDK.framework"]
   s.frameworks       = 'SystemConfiguration', 'CoreGraphics', 'Foundation', 'UIKit'
   s.libraries        = 'z', 'c++'
+  s.resources    = 'Resources/*.bundle'
 end
