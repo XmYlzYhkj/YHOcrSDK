@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "YHOcrSDK"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.summary = "通用OCR图像文字识别组件."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"XmYhkj"=>"yhkj_xm@163.com"}
@@ -10,4 +10,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.requires_arc = true
   s.vendored_frameworks = ["Frameworks/YHOcrSDK.framework"]
+  s.frameworks       = 'SystemConfiguration', 'CoreGraphics', 'Foundation', 'UIKit'
+  s.libraries        = 'z', 'c++'
 end
