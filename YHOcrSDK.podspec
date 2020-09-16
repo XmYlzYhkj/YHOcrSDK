@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.requires_arc = true
   s.vendored_frameworks = ["Frameworks/YHOcrSDK.framework"]
-  s.frameworks       = 'SystemConfiguration', 'CoreGraphics', 'Foundation', 'UIKit', 'CoreMotion', 'QuartzCore', 'AVFoundation', 'AssetsLibrary'
+  s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'QuartzCore', 'AVFoundation', 'AssetsLibrary', 'CoreMedia'
   s.libraries        = 'z', 'c++'
   s.resources    = 'Resources/*.bundle'
 end
