@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "YHOcrSDK"
-  s.version = "0.1.1"
+  s.version = "1.1.1"
   s.summary = "通用OCR图像文字识别组件."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"XmYhkj"=>"yhkj_xm@163.com"}

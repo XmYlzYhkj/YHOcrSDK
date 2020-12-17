@@ -22,9 +22,10 @@ typedef NS_ENUM(NSInteger, CardType) {
 @interface YHOcrCaptureCardVC : UIViewController
 
 @property (nonatomic, assign) CardType cardType;
-@property (nonatomic, copy) void (^handler)(UIImage *);
+@property (nonatomic, copy) void (^handler)(UIImage *,YHOcrCaptureCardVC *);
 
+-(void)setTips:(NSString *)tips;
 
-+(UIViewController *)ViewControllerWithCardType:(CardType)type andImageHandler:(void (^)(UIImage *image))handler;
++(UIViewController *)ViewControllerWithCardType:(CardType)type andImageHandler:(void (^)(UIImage *image,YHOcrCaptureCardVC *vc))handler;
 
 @end
